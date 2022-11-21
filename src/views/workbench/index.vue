@@ -12,33 +12,6 @@
         </div>
     </div>
     <div class="content">
-        <!-- <div class="deal">
-            <div><p class="tables"><span class="active">本日交易数据</span><span>昨日交易数据</span></p><p class="more"><span><img src="../../../public/img/more.png" alt="">更多</span><span><img src="../../../public/img/circle.png" alt="">更新</span></p></div>
-            <ul>
-                <li>    &nbsp; </li>
-                <li>成功交易金额</li>
-                <li>成功交易金额</li>
-                <li>转换率</li>
-                <li>退款笔数</li>
-                <li>手续费</li>
-            </ul>
-            <ul class="seoncd">
-                <li>收款数据</li>
-                <li>7.288.00</li>
-                <li>2134</li>
-                <li>13%</li>
-                <li>2</li>
-                <li>123.00</li>
-            </ul>
-            <ul class="third">
-                <li>打款业务数据</li>
-                <li>0.00</li>
-                <li>0.00</li>
-                <li>0.00</li>
-                <li>一</li>
-                <li>一</li>
-            </ul>
-        </div> -->
         <div class="list">
             <div class="detail lefts">
                 <p>基础模块</p>
@@ -57,57 +30,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="detail">
-                <p>高级模块</p>
-                <div class="modules">
-                    <div class="system">
-                        <img src="../../../public/img/list_1.png" alt="">
-                        <p>CEO看板</p>
-                    </div>
-                    <div class="appliaction">
-                        <img src="../../../public/img/list_2.png" alt="">
-                        <p>用户系统</p>
-                    </div>
-                    <div class="morethan">
-                        <img src="../../../public/img/list_3.png" alt="">
-                        <p>更多</p>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="detail lefts">
-                <p>支付场景</p>
-                <div class="modules">
-                    <div class="system">
-                        <img src="../../../public/img/list_1.png" alt="">
-                        <p>跨境收款</p>
-                    </div>
-                    <div class="appliaction">
-                        <img src="../../../public/img/list_2.png" alt="">
-                        <p>企业打款</p>
-                    </div>
-                    <div class="morethan">
-                        <img src="../../../public/img/list_3.png" alt="">
-                        <p>更多</p>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="detail">
-                <p>账户相关</p>
-                <div class="modules">
-                    <div class="system">
-                        <img src="../../../public/img/list_1.png" alt="">
-                        <p>财务中心</p>
-                    </div>
-                    <div class="appliaction">
-                        <img src="../../../public/img/list_2.png" alt="">
-                        <p>账户中心</p>
-                    </div> 
-                    <div class="morethan">
-                        <img src="../../../public/img/list_3.png" alt="">
-                        <p>更多</p>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
   </div>
