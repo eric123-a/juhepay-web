@@ -313,6 +313,7 @@ export default class extends Vue {
   private handleLogin() {
     localStorage.setItem('username',this.loginForm.usernames);
     localStorage.setItem('password',this.loginForm.password);
+    console.log(888,this.otherQuery);
     if (this.loginForm.usernames === '' || this.loginForm.password === '') {
       Message({
         message: "账号或密码不能为空",

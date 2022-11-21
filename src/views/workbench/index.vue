@@ -7,12 +7,12 @@
              <div>
                  <p>你好，{{username}}</p>
                  <p>账号：{{mobile}}</p>
-                 <p><span>服务到期时间:2025.12.30</span><button>续费</button><button>升级</button></p>
+                 <!-- <p><span>服务到期时间:2025.12.30</span><button>续费</button><button>升级</button></p> -->
              </div>
         </div>
     </div>
     <div class="content">
-        <div class="deal">
+        <!-- <div class="deal">
             <div><p class="tables"><span class="active">本日交易数据</span><span>昨日交易数据</span></p><p class="more"><span><img src="../../../public/img/more.png" alt="">更多</span><span><img src="../../../public/img/circle.png" alt="">更新</span></p></div>
             <ul>
                 <li>    &nbsp; </li>
@@ -38,7 +38,7 @@
                 <li>一</li>
                 <li>一</li>
             </ul>
-        </div>
+        </div> -->
         <div class="list">
             <div class="detail lefts">
                 <p>基础模块</p>
@@ -57,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div class="detail">
+            <!-- <div class="detail">
                 <p>高级模块</p>
                 <div class="modules">
                     <div class="system">
@@ -73,8 +73,8 @@
                         <p>更多</p>
                     </div>
                 </div>
-            </div>
-            <div class="detail lefts">
+            </div> -->
+            <!-- <div class="detail lefts">
                 <p>支付场景</p>
                 <div class="modules">
                     <div class="system">
@@ -90,8 +90,8 @@
                         <p>更多</p>
                     </div>
                 </div>
-            </div>
-            <div class="detail">
+            </div> -->
+            <!-- <div class="detail">
                 <p>账户相关</p>
                 <div class="modules">
                     <div class="system">
@@ -107,7 +107,7 @@
                         <p>更多</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
   </div>

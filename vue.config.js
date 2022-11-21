@@ -4,8 +4,8 @@ const name = '闪聚支付'
 //const host = 'http://localhost:56010'
 // const host = 'http://xfc.nat300.top'
 // const host = 'http://211.103.136.242:7280/'
-const host = 'https://mock.boxuegu.com/mock/602'
-
+//const host = 'https://mock.boxuegu.com/mock/602'
+const host ='http://121.41.102.171:56010'
 
 module.exports = {
     publicPath: '/',
@@ -22,6 +22,10 @@ module.exports = {
               target: host,
               changeOrigin: true, // needed for virtual hosted sites
               logLevel: 'debug',
+              onProxyRes(proxyRes, req, res) {
+                const realUrl = new URL(req.url || '', host)?.href || '';
+                proxyRes.headers['x-real-url2'] = realUrl;
+              },
               ws: true, // proxy websockets
               pathRewrite: {
                 ['^' + process.env.VUE_APP_BASE_API + '/merchant']: '/merchant'
@@ -31,6 +35,10 @@ module.exports = {
               target: host,
               changeOrigin: true, // needed for virtual hosted sites
               ws: true, // proxy websockets
+              onProxyRes(proxyRes, req, res) {
+                const realUrl = new URL(req.url || '', host)?.href || '';
+                proxyRes.headers['x-real-url2'] = realUrl;
+              },
               pathRewrite: {
                 ['^' + process.env.VUE_APP_BASE_API + '/uaa']: '/uaa'
               }
@@ -39,6 +47,10 @@ module.exports = {
               target: host,
               changeOrigin: true, // needed for virtual hosted sites
               ws: true, // proxy websockets
+              onProxyRes(proxyRes, req, res) {
+                const realUrl = new URL(req.url || '', host)?.href || '';
+                proxyRes.headers['x-real-url2'] = realUrl;
+              },
               pathRewrite: {
                 ['^' + process.env.VUE_APP_BASE_API + '/user']: '/user'
               }
@@ -47,6 +59,10 @@ module.exports = {
               target: host,
               changeOrigin: true, // needed for virtual hosted sites
               ws: true, // proxy websockets
+              onProxyRes(proxyRes, req, res) {
+                const realUrl = new URL(req.url || '', host)?.href || '';
+                proxyRes.headers['x-real-url2'] = realUrl;
+              },
               pathRewrite: {
                 ['^' + process.env.VUE_APP_BASE_API + '/operation']: '/operation'
               }
@@ -55,6 +71,10 @@ module.exports = {
               target: host,
               changeOrigin: true, // needed for virtual hosted sites
               ws: true, // proxy websockets
+              onProxyRes(proxyRes, req, res) {
+                const realUrl = new URL(req.url || '', host)?.href || '';
+                proxyRes.headers['x-real-url2'] = realUrl;
+              },
               pathRewrite: {
                 ['^' + process.env.VUE_APP_BASE_API + '/zuul']: '/zuul'
               }

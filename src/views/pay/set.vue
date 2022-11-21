@@ -326,6 +326,7 @@ export default class extends Vue {
         });
         return;
     }
+    console.log(898989,this.setParasData,this.paramId)
     if (this.paramId === '0') {
       let res = await setParams(this.setParasData);
         this.$message({

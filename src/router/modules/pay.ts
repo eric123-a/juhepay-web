@@ -34,7 +34,8 @@ const payRoutes: RouteConfig = {
       meta: {
         code: 'P002002',
         title: '开始支付',
-        icon: 'table'
+        icon: 'table',
+        hidden:true
       }
     },
     {
@@ -43,7 +44,8 @@ const payRoutes: RouteConfig = {
       meta: {
         code: 'P002003',
         title: '应用财务对账',
-        icon: 'table'
+        icon: 'table',
+        hidden:true
       }
     },
     {
@@ -52,7 +54,7 @@ const payRoutes: RouteConfig = {
       meta: {
         code: 'P002004',
         title: '应用交易总览',
-        icon: 'table'
+        icon: 'table',
       }
     }
   ]

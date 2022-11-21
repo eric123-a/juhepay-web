@@ -78,7 +78,7 @@ import { login } from '@/api/users'
 import { Form as ElForm, Input } from 'element-ui'
 import { UserModule } from '@/store/modules/user'
 import { setApprove, upload } from '@/api/finance.ts'
-import { getList } from '@/api/finance.ts'
+import { getList,agree } from '@/api/finance.ts'
 @Component({
   name: 'Login'
 })
@@ -124,7 +124,7 @@ export default class extends Vue {
             this.imageUrl2 = res.idCardAfterImg
             this.form.username = res.username
         }
-        console.log(res)
+        console.log(445,res)
     }
     private handleAvatarSuccess(res:any, file:any) {
         this.imageUrl = URL.createObjectURL(file.raw);
@@ -161,7 +161,12 @@ export default class extends Vue {
 
     private  async submit () {
         let res = await setApprove(this.form)
-        
+        let info = await getList();
+        console.log(565,info)
+        if(info){
+            console.log(666,info)
+          await agree({merchantId:info.id})
+        }
         this.$router.push('/finance/index')
     } 
 }

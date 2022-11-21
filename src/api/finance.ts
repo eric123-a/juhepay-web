@@ -26,6 +26,12 @@ export const setApprove =  (data:any) =>
 //根据租户获取商户信息
 export const getList =  () => 
   request ({
-      url:`/merchant/my/merchants?tenantId=${UserModule.tenantId}`,
+      url:`/merchant/my/merchants`,
       method:'get'
   })
+
+  export const agree = (data) => 
+  request ({
+    url:`/merchant/my/merchants/agree?merchantId=1593639081135312897`,//${data.merchantId}`,
+    method:'put',
+})
